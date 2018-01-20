@@ -86,6 +86,9 @@
     </p>
 }
             </section>
+            <section id="socialLoginForm">
+                @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl=ViewBag.ReturnUrl})
+            </section>
 
             @*<form action="../../index2.html" method="post">
                     <div class="form-group has-feedback">

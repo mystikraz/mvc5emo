@@ -367,7 +367,7 @@ namespace MVCDemo.Controllers
                 {
                     return View("ExternalLoginFailure");
                 }
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.UserName, Email = model.Email,FullName=model.FullName,Gender=model.Gender };
                 var result = await UserManager.CreateAsync(user);
                 if (result.Succeeded)
                 {
