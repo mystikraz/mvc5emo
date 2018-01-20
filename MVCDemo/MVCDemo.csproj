@@ -198,6 +198,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801191112572_InitialCreate.cs" />
+    <Compile Include="Migrations\201801191112572_InitialCreate.Designer.cs">
+      <DependentUpon>201801191112572_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801200346158_addedFullName.cs" />
+    <Compile Include="Migrations\201801200346158_addedFullName.Designer.cs">
+      <DependentUpon>201801200346158_addedFullName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801200355205_addedGender.cs" />
+    <Compile Include="Migrations\201801200355205_addedGender.Designer.cs">
+      <DependentUpon>201801200355205_addedGender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801200358221_addedFullName1.cs" />
+    <Compile Include="Migrations\201801200358221_addedFullName1.Designer.cs">
+      <DependentUpon>201801200358221_addedFullName1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -7562,6 +7579,20 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201801191112572_InitialCreate.resx">
+      <DependentUpon>201801191112572_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801200346158_addedFullName.resx">
+      <DependentUpon>201801200346158_addedFullName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801200355205_addedGender.resx">
+      <DependentUpon>201801200355205_addedGender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801200358221_addedFullName1.resx">
+      <DependentUpon>201801200358221_addedFullName1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
