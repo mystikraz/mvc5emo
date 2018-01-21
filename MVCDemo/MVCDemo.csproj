@@ -195,6 +195,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Utils\CustomPasswordHasher.cs" />
+    <Compile Include="Utils\Encrypt.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

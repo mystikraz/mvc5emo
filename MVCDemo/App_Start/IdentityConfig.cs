@@ -11,6 +11,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using MVCDemo.Models;
+using MVCDemo.Utils;
 
 namespace MVCDemo
 {
@@ -38,6 +39,7 @@ namespace MVCDemo
         public ApplicationUserManager(IUserStore<ApplicationUser> store)
             : base(store)
         {
+            PasswordHasher = new CustomPasswordHasher();
         }
 
         public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options, IOwinContext context) 
