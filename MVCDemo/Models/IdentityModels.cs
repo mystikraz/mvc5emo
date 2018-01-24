@@ -23,6 +23,12 @@ namespace MVCDemo.Models
         }
     }
 
+    public class ApplicationRole : IdentityRole
+    {
+        public ApplicationRole() :base() { }
+        public ApplicationRole(string roleName) : base(roleName) { }
+    }
+
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
@@ -34,5 +40,7 @@ namespace MVCDemo.Models
         {
             return new ApplicationDbContext();
         }
+
+        //public System.Data.Entity.DbSet<MVCDemo.Models.RoleViewModel> RoleViewModels { get; set; }
     }
 }
