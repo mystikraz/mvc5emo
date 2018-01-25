@@ -196,6 +196,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="CustomAuthorizeAttribute.cs" />
     <Compile Include="Migrations\201801241007254_role.cs" />
     <Compile Include="Migrations\201801241007254_role.Designer.cs">
       <DependentUpon>201801241007254_role.cs</DependentUpon>
@@ -2154,6 +2155,7 @@
     <Content Include="Views\Role\Edit.cshtml" />
     <Content Include="Views\Role\Details.cshtml" />
     <Content Include="Views\Role\Delete.cshtml" />
+    <Content Include="Views\Home\AuthorizeFailed.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
