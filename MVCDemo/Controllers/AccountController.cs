@@ -167,6 +167,7 @@ namespace MVCDemo.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
+
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { UserName = model.UserName, Email = model.Email, FullName=model.FullName, Gender=model.Gender };
@@ -188,6 +189,7 @@ namespace MVCDemo.Controllers
             }
 
             // If we got this far, something failed, redisplay form
+            
             return View(model);
         }
 
