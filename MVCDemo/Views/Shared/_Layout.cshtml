@@ -31,7 +31,7 @@
                     }
                     @if (Context.User.Identity.IsAuthenticated)
                     {
-                        if (User.IsInRole("Sales"))
+                        if (User.IsInRole("Admin"))
                         {
                             <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                         }
